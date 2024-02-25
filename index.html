@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mishkatsuliman.com</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -53,43 +54,54 @@
         
 
         <!-- <section class="project"></section> -->
-        <section class="contact-info">
-            <div>
-                <p>Links below for contact info:</p>
-                <div class="social-icon">
-                    <ul>
-                        <li><a class="social" href="https://github.com/Mshkatso-01" target="_blank"><i class="fa-brands fa-github"></i></a></i></li>
-                        <li><a class="social" href="https://www.linkedin.com/in/mishkat-suliman-586037227" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a class="social" href="https://twitter.com/MishkatSuliman0" target="_blank"><i class="fa-brands fa-x-twitter" ></i></a></li>
-                    </ul>
-                    <!-- <li><a class="social" href="Mshkatso.sul0@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></li> -->
+
+            <section class="contact-info">
+                <div>
+                    <p>Links below for contact info:</p>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a class="social" href="https://github.com/Mshkatso-01" target="_blank"><i class="fa-brands fa-github"></i></a></i></li>
+                            <li><a class="social" href="https://www.linkedin.com/in/mishkat-suliman-586037227" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a class="social" href="https://twitter.com/MishkatSuliman0" target="_blank"><i class="fa-brands fa-x-twitter" ></i></a></li>
+                        </ul>
+                        <!-- <li><a class="social" href="Mshkatso.sul0@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></li> -->
+                    </div>
+            </section>
+            <div class="form">
+                <div class="contacts">
+                    <form method="post" onsubmit="sendEmail(); reset(); return false;">
+                        <div id="me">
+                            <h2>CONTACT ME:</h2>
+                        </div>
+                        <!-- <label for="name">Name:</label> -->
+                        <input type="text" placeholder="Name" name="" id="name">
+                        <small class="error"></small>
+                        <!-- <label for="email">Email:</label> -->
+                        <input type="email" placeholder="Email" name="" id="email">
+                        <small class="error"></small>
+                        <!-- <label for="Subject">Subject:</label> -->
+                        <input type="text" placeholder="Subject" name="" id="text">
+                        <small class="error"></small>
+                        <!-- <label for="Message"></label> -->
+                        <textarea  placeholder="Type Message" name="" id="textarea" rows="6" ></textarea>
+                        <small class="error"></small>
+                        <button name="contact-btn">Submit</button>
+                    </form>
                 </div>
-        </section>
-        <section>
-            <div class="contacts">
-                <form method="post">
-                    <h2>CONTACT ME:</h2>
-                    <label for="name">Name:</label>
-                    <input type="text" placeholder="Name" name="" id="name">
-                    <small class="error"></small>
-                    <label for="email">Email:</label>
-                    <input type="email" placeholder="Email" name="" id="email">
-                    <small class="error"></small>
-                    <label for="Subject">Subject:</label>
-                    <input type="text" placeholder="Subject" name="" id="text">
-                    <small class="error"></small>
-                    <label for="Message"></label>
-                    <textarea  placeholder="Type Message" name="" id="textarea" rows="6" ></textarea>
-                    <small class="error"></small>
-                    <button name="contact-btn">Submit</button>
-                </form>
             </div>
-        </section>
+        </div>
     </main>
+    <div class="overlay-container">
+        <div class="overlay"></div>
+    </div>
 
     <footer>
-        <div><h1>Mshkatso</h1></div>
+        <div><h1><span>M</span>shkatso</h1></div>
+        <p>Copyright &#169; 2024 Mishkat Suliman, All Right Reserved.</p>
     </footer>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script
+    src="index.js"></script>
 
         
 </body>
