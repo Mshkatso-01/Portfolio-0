@@ -1,5 +1,20 @@
-const nameInput = document.getElementById("name")
-
+// const mainMenu  = document.querySelector('.mainmenu');
+// const openMenu  = document.querySelector('.checkbtn');
+// const closeMenu = document.querySelector('.closemenu');
+// openMenu.addEventListener('click', show);
+// closeMenu.addEventListener('click', close)
+// function show(){
+//   mainMenu.style.display = 'flex';
+//   mainMenu.style.top = '0';
+// }
+// function close(){
+//   mainMenu.style.top = '-100%'
+// }
+const toggleButton = document.getElementsByClassName('checkbtn')[0]
+const navbarlinks = document.getElementsByClassName9('navbar-links')[0]
+toggleButton.addEventListener('click', () => {
+  navbarlinks.classList.toggle('active')
+})
 
 
 function sendEmail(){

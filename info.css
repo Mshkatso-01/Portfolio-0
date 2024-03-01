@@ -1,0 +1,48 @@
+@media (max-width: 460px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: #e5e5e5;
+    }
+    body{
+        display: frid;
+        min-height: 100vh;
+    
+    }
+    .bio{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 100vh;
+        margin: 2em;
+    }
+    img{
+        max-width: 75%;
+        max-height: 75%;
+        margin: 0 auto;
+        size: 250px;
+        margin-top: 100px;
+    }
+
+    
+    .information{
+        /* background-color: rebeccapurple; */
+        margin: 2em 1em;
+        width: 75%;
+        width: 95%;
+        text-align:justify;
+        
+    }
+    .information h2{
+        width:80%;
+        height: 40%;
+    
+        
+        
+    }
+ 
+
+    
+/* } */
