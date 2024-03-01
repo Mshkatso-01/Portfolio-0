@@ -1,6 +1,5 @@
 @media(max-width:460px){
 
-
 .contacts{
     /* margin-top: 50;
     padding-bottom: 120px; */
@@ -84,36 +83,12 @@ form h2{
     margin-top: 6px 0 6px 0;
 }
 .overlay{
-    margin-left: .8em;
+    margin-left: .5em;
     width: 100%;
     line-height: 100px;
     height: 1px;
     background-color: #14213d;
     display: inline-block;
-}
-.overlay-container{
-    margin-bottom: 30px;
-    padding-bottom: 40px;
-    
-
-}
-
-footer h1{
-    color: #fff;
-    font-weight: 800;
-    font-size: 50px;
-    padding-bottom: 15px;
-
-}
-footer span{
-    color:#14213d;
-    font-weight: 600;
-    font-size: 20px;
-
-}
-footer{
-    text-align: center;
-    padding-bottom: 20px;
 }
     
 }
