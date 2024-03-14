@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="info.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="320.css">
+    <link rel="stylesheet" href="641.css">
+    <link rel="stylesheet" href="hambergur.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -17,6 +20,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    
+    <label class="hambergur-menu">
+        <input type="checkbox"/>
+    </label>
+    <aside class="sidebar">
+        <nav>
+            <div>ABOUT</div>
+            <div>PROJECTS</div>
+            <div>CONTACTS</div>
+        </nav>
+    </aside>
+    <div>
+        <label class="logo">M<span>shkatso</span></label>
+    </div>
     <!-- <header>
         <nav>
             <label class="logo">M<span>shkatso</span></label>
@@ -32,76 +49,73 @@
         </nav>
     </header> -->
     <main>
-        <section class="bio">
-            <div class="information">
-                <h1>Mishkat Suliman</h1>
-                <h2>Frontend developer</h2>
-                <div><p>This is Mishkat Suliman a junior Frontend developer have an experiance in a web design using HTNL, Css, and Javascript.
-                    interested in computational neuroscience and Web designing. </p>
+        <section class="information-container">
+            <div class="bio-container">
+                <div class="bio-1">
+                    <h1>Mishkat Suliman</h1>
+                    <h2>Frontend developer</h2>
                 </div>
-                    
-                <!-- <style>
-                    p{
-                        line-height: 100px;
-                    }
-                </style> -->
-                <div>
-                    <span class="divider"></span>
+                <div class="new-img">
+                    <img src="imgs/img2.png" alt="">
                 </div>
-            </div>
-            <div class="img"><img src="imgs/img2.png" alt="">   
+                <div class="bio-2">
+                    <p>This is Mishkat Suliman a junior Frontend developer have an experiance in a web design using HTNL, Css, and Javascript.
+                        interested in computational neuroscience and Web designing. </p>
+                </div>
             </div>
         </section>
-        <!-- <div>
-            <hr id="horizontal-line">
-            <span class="divider"></span>
-        </div> -->
-        
-
-        <!-- <section class="project"></section> -->
-
-            <!-- <section class="contact-info">
-                <div>
-                    <p>Links below for contact info:</p>
-                    <div class="social-icon">
-                        <ul>
-                            <li><a class="social" href="https://github.com/Mshkatso-01" target="_blank"><i class="fa-brands fa-github"></i></a></i></li>
-                            <li><a class="social" href="https://www.linkedin.com/in/mishkat-suliman-586037227" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                            <li><a class="social" href="https://twitter.com/MishkatSuliman0" target="_blank"><i class="fa-brands fa-x-twitter" ></i></a></li>
-                        </ul> -->
-                        <!-- <li><a class="social" href="Mshkatso.sul0@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></li> -->
-                    </div>
-            </section>
-            <div class="form">
-                <div class="contacts">
-                    <form method="post" onsubmit="sendEmail(); reset(); return false;">
-                        <div id="me">
-                            <h2>CONTACT ME:</h2>
-                        </div>
-                        <!-- <label for="name">Name:</label> -->
-                        <input type="text" placeholder="Name" name="" id="name">
-                        <small class="error"></small>
-                        <!-- <label for="email">Email:</label> -->
-                        <input type="email" placeholder="Email" name="" id="email">
-                        <small class="error"></small>
-                        <!-- <label for="Subject">Subject:</label> -->
-                        <input type="text" placeholder="Subject" name="" id="text">
-                        <small class="error"></small>
-                        <!-- <label for="Message"></label> -->
-                        <textarea  placeholder="Type Message" name="" id="textarea" rows="6" ></textarea>
-                        <small class="error"></small>
-                        <button name="contact-btn">Submit</button>
-                    </form>
-                </div>
+        <div class="contact-info">
+            <p>Links below for contact info:</p>
+            <div class="social-icon">
+                <ul class="ul">
+                    <li><a class="social" href="https://github.com/Mshkatso-01" target="_blank"><i class="fa-brands fa-github"></i></a></i></li>
+                    <li><a class="social" href="https://www.linkedin.com/in/mishkat-suliman-586037227" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a class="social" href="https://twitter.com/MishkatSuliman0" target="_blank"><i class="fa-brands fa-x-twitter" ></i></a></li>
+                </ul>
             </div>
         </div>
+        <div class="form">
+            <div class="contacts">
+                <form method="post" onsubmit="sendEmail(); reset(); return false;">
+                    <div id="me">
+                        <h2>CONTACT ME:</h2>
+                    </div>
+                    <!-- <label for="name">Name:</label> -->
+                    <input type="text" placeholder="Name" name="" id="name">
+                    <small class="error"></small>
+                    <!-- <label for="email">Email:</label> -->
+                    <input type="email" placeholder="Email" name="" id="email">
+                    <small class="error"></small>
+                    <!-- <label for="Subject">Subject:</label> -->
+                    <input type="text" placeholder="Subject" name="" id="text">
+                    <small class="error"></small>
+                    <!-- <label for="Message"></label> -->
+                    <textarea  placeholder="Type Message" name="" id="textarea" rows="6" ></textarea>
+                    <small class="error"></small>
+                    <button name="contact-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- <div class="contact-info">
+            <p>Links below for contact info:</p>
+            <div class="social-icon">
+                <ul>
+                    <li><a class="social" href="https://github.com/Mshkatso-01" target="_blank"><i class="fa-brands fa-github"></i></a></i></li>
+                    <li><a class="social" href="https://www.linkedin.com/in/mishkat-suliman-586037227" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a class="social" href="https://twitter.com/MishkatSuliman0" target="_blank"><i class="fa-brands fa-x-twitter" ></i></a></li>
+                    </ul> -->
+                        <!-- <li><a class="social" href="Mshkatso.sul0@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></li> -->
+                </div>
+            </div>
+ 
     </main>
     <div class="overlay-container">
         <div class="overlay"></div>
     </div>
 
     <footer>
-        <div><h1><span>M</span>shkatso</h1></div>
+        <div><h1 class="foot"><span>M</span>shkatso</h1></div>
         <p>Copyright &#169; 2024 Mishkat Suliman, All Right Reserved.</p>
     </footer>
     <script src=" https://smtpjs.com/v3/smtp.js"></script>
